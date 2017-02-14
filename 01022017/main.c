@@ -122,6 +122,7 @@ void swap2(char*,char*,char,int);
 void swap2(char* iKey,char* iBuff,char kChar,int rIndex) {
 	 int i;
 	 int tKChar = kChar;
+	 //finx: tKChar &= 
 	 if(!((tKChar & 0x8000000f) >= 0)) {
 	 	 --tKChar;
 	 	 tKChar |= 0x0fffffff;
