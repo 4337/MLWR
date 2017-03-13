@@ -187,9 +187,11 @@ void decrypt(char* encData,char* iBuff,unsigned int encLen) {
 	 unsigned char rKeyChar = 0;
 	 for(i=0;i<encLen;i++) {
 	 	 rKeyChar = getXorVal(iBuff);
-	 	 rKeyChar ^= encData[i];
-	 	 encData[i] = rKeyChar;
-	 	// printf("0x%02x ",(unsigned char)encData[i]); 
+	 	 rKeyChar ^= encData[i]; //niezależnie od długości klucza mamy 256 możliwości + 256 / 2 w przypadku signed char, taka sytuacja
+	 	 encData[i] = rKeyChar;  //ofc jako ortodox nieużywam hexrejsów czy innego softu dla ekspertów. Wniosek jest taki że nie ma żadnych wniosków :)
+	 	// printf("0x%02x ",(unsigned char)encData[i]);  //poza tym że bruteforece dla ~rc4 to char ^= encDtata[len(encData)], niby banał, ale jak bardzo jest istotne to czego szukamy
+		 //                                                np. w przypadku gdy jesteśmy pewni że szukamy tekstów alfa-numerysznych (pisanych) zakres można zawęzić, co i tak daje tyle możliwości że 
+	         //                                                że dla współczensych koputerów kryptigrafia staje się ciekawa ? 
 	 }
 }
 
