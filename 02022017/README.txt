@@ -1,3 +1,3 @@
-Trojan który ³¹czy siê i kradnie ! ^^
-Czyli troszkê informacji o jednej z wersji w³aœciwie tego samego z³oœliwego oprogramowania wykorzystanego w atakach 
-na banki w Polsce.
+Trojan ktÃ³ry Å‚Ä…czy siÄ™ i kradnie ! ^^
+Czyli troszkÄ™ informacji o jednej z wersji wÅ‚aÅ›ciwie tego samego zÅ‚oÅ›liwego oprogramowania wykorzystanego w atakach 
+na banki w Polsce i KomisjÄ™ Nadzoru Finansowego.
