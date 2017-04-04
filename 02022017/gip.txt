@@ -29,6 +29,6 @@ to adresy zwracane przez serwery DNS bez modyfikacji.
 
 Why ?
 
-Bez proxy niewyjdziemy z sieci wewnêtrznej, chyba ¿e jest tak skonfigurowana ¿e proxy jest opcjonalne.
+Bez proxy nie wyjdziemy z sieci wewnêtrznej, chyba ¿e jest tak skonfigurowana ¿e proxy jest opcjonalne.
 W wiêkszoœci œrodowisk korporacyjnych proxy to standard.
 Adresy s¹ modyfikowane wy³¹cznie gdy nie ma proxy.
