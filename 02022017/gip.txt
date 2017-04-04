@@ -1,0 +1,28 @@
+Ogólnie wygl¹da to tak:
+Trojan ma w swoim pliku konfiguracyjnym miejsce na adres serwera proxy (offset 0x454)
+
+Je¿eli miesjce adresu proxy w konfigu jest wyzerowane to mal³er:
+
+1. W przypadku gdy w konfigu C&C jest zapisany jako DNS
+   Rozwi¹zuje nazwê na IP, xoruje IP, i stara siê nawi¹zaæ po³¹czenie
+2. Je¿eli w konfigu C&C jest zapisany jako IP 
+   Trojan stara siê nawi¹zaæ po³¹czenie bez modyfikowania adresu i odpytywania DNS-ów
+
+Je¿eli w konfigu zdefiniowano adres proxy
+
+1. Trojan pobiera adres serwera proxy z rejestru systemowego 
+   
+   W przpadku gdy w systemie jest zdefiniowane proxy, zostanie ono u¿yte w po³¹czeniach z C&C
+
+2. Je¿eli systemowe proxy nie jest zdefiniowane 
+
+   Trojan bêdzie u¿ywa³ proxy z pliku konfiguracyjnego 
+
+Kiedy z³oœliwe oprogramowanie zakoñczy zabawê z wyborem proxy (konfig vs systemowe)
+Bierze adres serwera C&C z konfiga i jak poprzednio w zale¿noœci czy jest to IP czy DNS
+rozwi¹zuje DNS na IP lub nawi¹zuje po³¹czenie z pominiêciem serwerów DNS 
+
+Z t¹ ró¿nic¹ ¿e tu uzyskany z serwera DNS adres IP nie jest modyfikowany.
+
+W zwi¹zku z czym s¹dzê ¿e prawdziwe adresy C&C przy za³o¿eniu ¿e zapisane w konfigach adresy domen s¹ w ogóle prawdziwe (konfigi s¹ nieco wybrakowane)
+to adresy zwracane przez serwery DNS bez modyfikacji.
