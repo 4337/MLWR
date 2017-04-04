@@ -26,3 +26,9 @@ Z t¹ ró¿nic¹ ¿e tu uzyskany z serwera DNS adres IP nie jest modyfikowany.
 
 W zwi¹zku z czym s¹dzê ¿e prawdziwe adresy C&C przy za³o¿eniu ¿e zapisane w konfigach adresy domen s¹ w ogóle prawdziwe (konfigi s¹ nieco wybrakowane)
 to adresy zwracane przez serwery DNS bez modyfikacji.
+
+Why ?
+
+Bez proxy niewyjdziemy z sieci wewnêtrznej, chyba ¿e jest tak skonfigurowana ¿e proxy jest opcjonalne.
+W wiêkszoœci œrodowisk korporacyjnych proxy to standard.
+Adresy s¹ modyfikowane wy³¹cznie gdy nie ma proxy.
