@@ -31,4 +31,4 @@ Why ?
 
 Bez proxy nie wyjdziemy z sieci wewnêtrznej, chyba ¿e jest tak skonfigurowana ¿e proxy jest opcjonalne.
 W wiêkszoœci œrodowisk korporacyjnych proxy to standard.
-Adresy s¹ modyfikowane wy³¹cznie gdy nie ma proxy.
+Adresy s¹ modyfikowane wy³¹cznie gdy nie ma proxy i s¹ uzsykiwane za poœrednictwem DNS.
